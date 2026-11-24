@@ -1,1 +1,145 @@
-[]
+[
+  {
+    "id": "Q01",
+    "wiki_ref": "M01",
+    "section": "基礎理論",
+    "source_refs": [
+      "S003"
+    ],
+    "kind": "knowledge",
+    "question": "HSL 飽和度為 0% 時會呈現何種色彩？",
+    "options": [
+      "灰階",
+      "互補色",
+      "三角色",
+      "高飽和色"
+    ],
+    "correct_index": 0,
+    "explanation": "飽和度為零時為灰階。"
+  },
+  {
+    "id": "Q02",
+    "wiki_ref": "M02",
+    "section": "核心定義",
+    "source_refs": [
+      "S002"
+    ],
+    "kind": "knowledge",
+    "question": "螢幕 RGB 使用哪種混色方式？",
+    "options": [
+      "減法",
+      "加法",
+      "印刷油墨",
+      "RYB 顏料"
+    ],
+    "correct_index": 1,
+    "explanation": "RGB 是光通道的加法混色。"
+  },
+  {
+    "id": "Q03",
+    "wiki_ref": "M03",
+    "section": "基礎理論",
+    "source_refs": [
+      "S003"
+    ],
+    "kind": "knowledge",
+    "question": "數位 HSL 中，紅色 0° 的對向色是？",
+    "options": [
+      "綠",
+      "黃",
+      "青",
+      "紫"
+    ],
+    "correct_index": 2,
+    "explanation": "HSL 180° 為青。"
+  },
+  {
+    "id": "Q04",
+    "wiki_ref": "M04",
+    "section": "基礎理論",
+    "source_refs": [
+      "S005"
+    ],
+    "kind": "knowledge",
+    "question": "色彩與情緒聯想研究可以直接證明什麼？",
+    "options": [
+      "必然改變情緒",
+      "保證品牌銷售",
+      "治療焦慮",
+      "存在某些聯想關係"
+    ],
+    "correct_index": 3,
+    "explanation": "聯想不等同實際情緒改變。"
+  },
+  {
+    "id": "Q05",
+    "wiki_ref": "M05",
+    "section": "核心定義",
+    "source_refs": [
+      "S006"
+    ],
+    "kind": "knowledge",
+    "question": "兩塊相同灰色在不同背景看起來不同，稱為？",
+    "options": [
+      "同時對比",
+      "加法混色",
+      "色票匯出",
+      "三角色"
+    ],
+    "correct_index": 0,
+    "explanation": "背景可能影響明暗感受。"
+  },
+  {
+    "id": "Q06",
+    "wiki_ref": "M06",
+    "section": "核心定義",
+    "source_refs": [
+      "S007"
+    ],
+    "kind": "knowledge",
+    "question": "哪項原則最直接用來引導閱讀順序？",
+    "options": [
+      "色碼表示",
+      "視覺層級",
+      "減法混色",
+      "角度正規化"
+    ],
+    "correct_index": 1,
+    "explanation": "視覺層級引導閱讀順序。"
+  },
+  {
+    "id": "Q07",
+    "wiki_ref": "M07",
+    "section": "基礎理論",
+    "source_refs": [
+      "S009",
+      "S010"
+    ],
+    "kind": "knowledge",
+    "question": "無適用例外的一般文字 AA 最低對比度？",
+    "options": [
+      "3:1",
+      "7:1",
+      "4.5:1",
+      "1:1"
+    ],
+    "correct_index": 2,
+    "explanation": "一般文字 AA 門檻為 4.5:1。"
+  },
+  {
+    "id": "Q08",
+    "wiki_ref": "M08",
+    "section": "核心定義",
+    "source_refs": [],
+    "kind": "project_rule",
+    "question": "依 CHROMA 自訂流程，選色和組織版面後應做什麼？",
+    "options": [
+      "直接發布",
+      "忽略背景",
+      "保證心理效果",
+      "檢查可讀性並迭代"
+    ],
+    "correct_index": 3,
+    "explanation": "本專案流程包含可讀性檢查及迭代。"
+  }
+]

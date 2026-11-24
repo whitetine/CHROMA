@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Learn｜14 頁色彩教學 — CHROMA</title>
+  <meta name="description" content="CHROMA 14 頁逐頁色彩教學：SEE COLOR、THINK COLOR、DESIGN WITH COLOR、EXPERIMENT。">
+  <link rel="icon" href="assets/illustrations/mark.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/css/tokens.css">
+  <link rel="stylesheet" href="assets/css/base.css">
+  <link rel="stylesheet" href="assets/css/lab.css">
+  <link rel="stylesheet" href="assets/css/slides.css">
+</head>
+<body data-page="learn">
+  <a class="skip-link" href="#main">跳至主要內容</a>
+  <header class="site-header">
+    <a class="brand" href="index.html" aria-label="CHROMA 首頁">
+      <svg class="brand-mark" viewBox="0 0 64 64" aria-hidden="true"><circle cx="22" cy="22" r="16" fill="#E64C37"/><rect x="30" y="30" width="28" height="28" fill="#2855AA"/><path d="M6 58 L22 34 L38 58 Z" fill="#F4C846" stroke="#202020" stroke-width="2"/></svg>
+      <span class="brand-word">CHROMA.</span>
+    </a>
+    <button class="btn btn-sm nav-toggle" type="button" data-nav-toggle aria-expanded="false" aria-controls="site-nav">選單 Menu</button>
+    <nav id="site-nav" aria-label="主要導覽">
+      <ol>
+        <li><a href="index.html" data-page="home"><span class="nav-no">00</span>Home <span class="nav-zh">首頁</span></a></li>
+        <li><a href="slides.html" data-page="learn"><span class="nav-no">01</span>Learn <span class="nav-zh">教學</span></a></li>
+        <li><a href="wiki.html" data-page="wiki"><span class="nav-no">02</span>Wiki <span class="nav-zh">知識庫</span></a></li>
+        <li><a href="lab.html" data-page="lab"><span class="nav-no">03</span>Lab <span class="nav-zh">實驗室</span></a></li>
+        <li><a href="workflow.html" data-page="workflow"><span class="nav-no">04</span>Workflow <span class="nav-zh">流程</span></a></li>
+        <li><a href="references.html" data-page="sources"><span class="nav-no">05</span>Sources <span class="nav-zh">來源</span></a></li>
+      </ol>
+    </nav>
+  </header>
+
+  <main id="main">
+    <div class="deck" id="deck" aria-roledescription="簡報" aria-label="CHROMA 14 頁教學簡報">
+      <div class="deck-bar">
+        <div class="deck-left">
+          <div class="chapter-menu">
+            <button class="btn btn-sm" type="button" id="chapter-btn" aria-expanded="false" aria-controls="chapter-panel">☰ <span class="btn-label">章節 Chapters</span></button>
+            <div class="chapter-panel" id="chapter-panel" hidden></div>
+          </div>
+          <button class="btn btn-sm" type="button" id="prev-btn" aria-label="上一頁">← <span class="btn-label">上一頁</span></button>
+          <span class="deck-count" id="deck-count" aria-hidden="true">01 / 14</span>
+          <button class="btn btn-sm" type="button" id="next-btn" aria-label="下一頁"><span class="btn-label">下一頁</span> →</button>
+        </div>
+        <div class="progress-wrap">
+          <span class="progress-chapter" id="progress-chapter">01 SEE COLOR</span>
+          <div class="progress" role="progressbar" id="progress" aria-label="教學進度" aria-valuemin="1" aria-valuemax="14" aria-valuenow="1"><span class="progress-fill" id="progress-fill" style="width:7.14%"></span></div>
+        </div>
+        <div class="deck-right">
+          <label class="jump"><span class="visually-hidden">跳至頁面</span><select id="jump-select" aria-label="跳至指定頁面"></select></label>
+          <button class="btn btn-sm" type="button" id="fs-btn" aria-pressed="false">⛶ <span class="btn-label">全螢幕</span></button>
+        </div>
+      </div>
+      <div class="deck-stage" id="deck-stage">
+        <noscript><p class="notice">逐頁簡報需要 JavaScript。教材原文見專案 content/slides.json 與 content/slide-outline.md。</p></noscript>
+      </div>
+      <div class="deck-hint small"><span>鍵盤：<kbd>←</kbd> <kbd>→</kbd> 翻頁 · <kbd>Home</kbd> <kbd>End</kbd> 首末頁 · <kbd>F</kbd> 全螢幕 · <kbd>Esc</kbd> 退出全螢幕</span><span>在輸入欄或滑桿上操作時，方向鍵不會翻頁。</span></div>
+      <p class="visually-hidden" id="deck-status" role="status" aria-live="polite"></p>
+    </div>
+  </main>
+  <footer class="site-footer">
+    <p><strong>CHROMA.</strong> The Science and Art of Color · 所有圖形為原創 SVG／CSS／Canvas。</p>
+    <p><a href="references.html">來源與授權</a> · <a href="workflow.html">驗證紀錄</a></p>
+  </footer>
+
+  <script src="assets/data/chroma-data.js"></script>
+  <script src="assets/js/navigation.js"></script>
+  <script src="assets/js/color-utils.js"></script>
+  <script src="assets/js/color-wheel.js"></script>
+  <script src="assets/js/contrast.js"></script>
+  <script src="assets/js/quiz.js"></script>
+  <script src="assets/js/lab.js"></script>
+  <script src="assets/js/slides.js"></script>
+</body>
+</html>

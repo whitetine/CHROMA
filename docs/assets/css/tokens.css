@@ -1,0 +1,70 @@
+/*
+ * CHROMA design tokens — Swiss Style × Bauhaus × Digital Exhibition.
+ * Brand palette from PROJECT_SPEC.md is a starting point; text use is limited to the pairs
+ * below, each verified by scripts/validate_frontend.py with the WCAG 2.2 formula.
+ * --red (3.41:1 on canvas) and --yellow (1.41:1) are fills / graphics only, never body text.
+ *
+ * @text-pairs
+ * ink/canvas normal
+ * ink/paper normal
+ * ink/white normal
+ * muted/canvas normal
+ * muted/paper normal
+ * blue/canvas normal
+ * blue/paper normal
+ * red-text/canvas normal
+ * red-text/paper normal
+ * ink/yellow normal
+ * ink/sand normal
+ * white/blue normal
+ * white/red-text normal
+ * canvas/ink normal
+ * yellow/ink normal
+ * ink/red large
+ * @end
+ */
+:root {
+  --canvas: #F4F1E9;
+  --paper: #FBFAF6;
+  --sand: #DCD7CA;
+  --ink: #202020;
+  --muted: #5A5751;
+  --white: #FFFFFF;
+  --red: #E64C37;
+  --red-text: #B5321F;
+  --blue: #2855AA;
+  --yellow: #F4C846;
+  --rule: #202020;
+  --rule-soft: #CFC9BB;
+  --focus: #2855AA;
+
+  --font-sans: "Helvetica Neue", Helvetica, Arial, "Noto Sans TC", "PingFang TC", "Microsoft JhengHei", sans-serif;
+  --font-display: "Helvetica Neue", "Arial Black", Helvetica, Arial, "Noto Sans TC", "Microsoft JhengHei", sans-serif;
+  --font-mono: ui-monospace, "SFMono-Regular", Menlo, Consolas, "Liberation Mono", monospace;
+
+  --step--1: clamp(0.82rem, 0.8rem + 0.1vw, 0.9rem);
+  --step-0: clamp(1rem, 0.96rem + 0.2vw, 1.0625rem);
+  --step-1: clamp(1.2rem, 1.1rem + 0.5vw, 1.45rem);
+  --step-2: clamp(1.5rem, 1.25rem + 1.1vw, 2.1rem);
+  --step-3: clamp(2rem, 1.5rem + 2.4vw, 3.4rem);
+  --step-4: clamp(2.8rem, 1.6rem + 6vw, 7.5rem);
+  --step-5: clamp(3.4rem, 0.5rem + 8.2vw, 10rem);
+
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-5: 1.5rem;
+  --space-6: 2rem;
+  --space-7: 3rem;
+  --space-8: 4.5rem;
+  --space-9: 7rem;
+
+  --gutter: clamp(1rem, 0.5rem + 2.4vw, 2.5rem);
+  --max: 1360px;
+  --header-h: 4rem;
+  --radius: 2px;
+  --border: 2px solid var(--rule);
+  --ease: cubic-bezier(0.2, 0.7, 0.2, 1);
+  --dur: 320ms;
+}

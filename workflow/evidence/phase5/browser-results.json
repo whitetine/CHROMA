@@ -1,0 +1,222 @@
+{
+  "run_at": "2026-11-24T07:06:10.516Z",
+  "browser": "chrome (headless, playwright-core)",
+  "node": "v22.17.0",
+  "platform": "win32",
+  "total": 35,
+  "pass": 35,
+  "fail": 0,
+  "results": [
+    {
+      "name": "six pages load with title, h1/main and six nav links",
+      "status": "PASS",
+      "ms": 1928,
+      "detail": "index.html, slides.html, wiki.html, lab.html, workflow.html, references.html"
+    },
+    {
+      "name": "header navigation reaches every page and marks aria-current",
+      "status": "PASS",
+      "ms": 1096,
+      "detail": ""
+    },
+    {
+      "name": "mobile menu toggle opens/closes at 360px",
+      "status": "PASS",
+      "ms": 414,
+      "detail": ""
+    },
+    {
+      "name": "deck renders 14 slides and starts at SL01",
+      "status": "PASS",
+      "ms": 116,
+      "detail": ""
+    },
+    {
+      "name": "fresh load and #SL06 load are not scrolled by native fragment jump",
+      "status": "PASS",
+      "ms": 1691,
+      "detail": ""
+    },
+    {
+      "name": "keyboard ArrowRight/ArrowLeft/End/Home/PageDown",
+      "status": "PASS",
+      "ms": 282,
+      "detail": ""
+    },
+    {
+      "name": "prev/next buttons, progress and boundary disabling",
+      "status": "PASS",
+      "ms": 207,
+      "detail": ""
+    },
+    {
+      "name": "URL hash positioning (direct load #SL12, #7, hashchange)",
+      "status": "PASS",
+      "ms": 125,
+      "detail": ""
+    },
+    {
+      "name": "chapter menu and jump select go to a chosen slide",
+      "status": "PASS",
+      "ms": 159,
+      "detail": ""
+    },
+    {
+      "name": "arrow keys inside form controls are not intercepted (SL04 slider, hue input)",
+      "status": "PASS",
+      "ms": 230,
+      "detail": ""
+    },
+    {
+      "name": "every slide shows refs and mounts its interaction without error",
+      "status": "PASS",
+      "ms": 472,
+      "detail": "14 slides visited"
+    },
+    {
+      "name": "fullscreen enter and exit",
+      "status": "PASS",
+      "ms": 150,
+      "detail": ""
+    },
+    {
+      "name": "HSL: red, gray at S=0, black/white at L ends, reset",
+      "status": "PASS",
+      "ms": 553,
+      "detail": ""
+    },
+    {
+      "name": "Wheel: RYB red↔green and HSL red↔cyan labels",
+      "status": "PASS",
+      "ms": 47,
+      "detail": ""
+    },
+    {
+      "name": "Harmony: six schemes, triadic and complementary palettes",
+      "status": "PASS",
+      "ms": 190,
+      "detail": ""
+    },
+    {
+      "name": "Contrast: 21:1, 1:1, invalid HEX shows no pass",
+      "status": "PASS",
+      "ms": 231,
+      "detail": ""
+    },
+    {
+      "name": "RGB: all 255 white, presets black",
+      "status": "PASS",
+      "ms": 67,
+      "detail": ""
+    },
+    {
+      "name": "Simultaneous contrast: chips stay #888888, reveal reversible",
+      "status": "PASS",
+      "ms": 81,
+      "detail": ""
+    },
+    {
+      "name": "60-30-10: sum stays 100, clamps, resets",
+      "status": "PASS",
+      "ms": 86,
+      "detail": ""
+    },
+    {
+      "name": "Design compare: every state keeps text ≥ 4.5:1 (computed styles)",
+      "status": "PASS",
+      "ms": 1381,
+      "detail": "12 states checked"
+    },
+    {
+      "name": "Association: choice shows research note without diagnosis",
+      "status": "PASS",
+      "ms": 50,
+      "detail": ""
+    },
+    {
+      "name": "Design lab: default pairs pass AA; low-contrast button text is flagged",
+      "status": "PASS",
+      "ms": 51,
+      "detail": ""
+    },
+    {
+      "name": "Quiz: 8/8 when correct, 7/8 with one wrong, reset clears",
+      "status": "PASS",
+      "ms": 566,
+      "detail": ""
+    },
+    {
+      "name": "Export: copy HEX / CSS to clipboard and download valid JSON",
+      "status": "PASS",
+      "ms": 898,
+      "detail": "chroma-palette-triadic.json"
+    },
+    {
+      "name": "Wiki: module render, section hash, search, glossary, prereq graph",
+      "status": "PASS",
+      "ms": 238,
+      "detail": "search hits (WCAG)=3"
+    },
+    {
+      "name": "Sources: S001–S010 with license, filter by module, hash focus",
+      "status": "PASS",
+      "ms": 1066,
+      "detail": ""
+    },
+    {
+      "name": "Workflow: Graph V1, V2, sub-flow SVGs and records rendered",
+      "status": "PASS",
+      "ms": 182,
+      "detail": "graphs=3 records=5"
+    },
+    {
+      "name": "responsive 360px: no horizontal overflow on six pages (+ deck slides)",
+      "status": "PASS",
+      "ms": 6179,
+      "detail": ""
+    },
+    {
+      "name": "responsive 768px: no horizontal overflow on six pages (+ deck slides)",
+      "status": "PASS",
+      "ms": 1914,
+      "detail": ""
+    },
+    {
+      "name": "responsive 1024px: no horizontal overflow on six pages (+ deck slides)",
+      "status": "PASS",
+      "ms": 1396,
+      "detail": ""
+    },
+    {
+      "name": "responsive 1440px: no horizontal overflow on six pages (+ deck slides)",
+      "status": "PASS",
+      "ms": 6294,
+      "detail": ""
+    },
+    {
+      "name": "prefers-reduced-motion disables decorative animation",
+      "status": "PASS",
+      "ms": 971,
+      "detail": ""
+    },
+    {
+      "name": "home animation pause control",
+      "status": "PASS",
+      "ms": 984,
+      "detail": ""
+    },
+    {
+      "name": "file:// (no server): six pages render data without errors",
+      "status": "PASS",
+      "ms": 1669,
+      "detail": ""
+    },
+    {
+      "name": "browser console: no errors, page errors or failed requests",
+      "status": "PASS",
+      "ms": 0,
+      "detail": "warnings=0"
+    }
+  ],
+  "console_issues": []
+}

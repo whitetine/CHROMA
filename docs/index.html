@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CHROMA — The Science and Art of Color｜色彩解碼</title>
+  <meta name="description" content="CHROMA：以已驗證 LLM Wiki 為基礎的初學者色彩教育網站，含 14 頁教學、知識庫、色彩實驗室與可追溯流程。">
+  <link rel="icon" href="assets/illustrations/mark.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/css/tokens.css">
+  <link rel="stylesheet" href="assets/css/base.css">
+</head>
+<body data-page="home">
+  <a class="skip-link" href="#main">跳至主要內容</a>
+  <header class="site-header">
+    <a class="brand" href="index.html" aria-label="CHROMA 首頁">
+      <svg class="brand-mark" viewBox="0 0 64 64" aria-hidden="true"><circle cx="22" cy="22" r="16" fill="#E64C37"/><rect x="30" y="30" width="28" height="28" fill="#2855AA"/><path d="M6 58 L22 34 L38 58 Z" fill="#F4C846" stroke="#202020" stroke-width="2"/></svg>
+      <span class="brand-word">CHROMA.</span>
+    </a>
+    <button class="btn btn-sm nav-toggle" type="button" data-nav-toggle aria-expanded="false" aria-controls="site-nav">選單 Menu</button>
+    <nav id="site-nav" aria-label="主要導覽">
+      <ol>
+        <li><a href="index.html" data-page="home"><span class="nav-no">00</span>Home <span class="nav-zh">首頁</span></a></li>
+        <li><a href="slides.html" data-page="learn"><span class="nav-no">01</span>Learn <span class="nav-zh">教學</span></a></li>
+        <li><a href="wiki.html" data-page="wiki"><span class="nav-no">02</span>Wiki <span class="nav-zh">知識庫</span></a></li>
+        <li><a href="lab.html" data-page="lab"><span class="nav-no">03</span>Lab <span class="nav-zh">實驗室</span></a></li>
+        <li><a href="workflow.html" data-page="workflow"><span class="nav-no">04</span>Workflow <span class="nav-zh">流程</span></a></li>
+        <li><a href="references.html" data-page="sources"><span class="nav-no">05</span>Sources <span class="nav-zh">來源</span></a></li>
+      </ol>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-text">
+        <div class="hero-meta"><span>EXHIBITION No.01</span><span>Color Education · 2026</span></div>
+        <div>
+          <h1 class="hero-title" id="hero-title">CHROMA<span class="dot">.</span></h1>
+          <p class="hero-sub" lang="en">The Science and Art of Color.</p>
+          <p class="hero-zh">色彩不只是裝飾，而是一種無聲的語言。</p>
+          <div class="btn-row">
+            <a class="btn btn-primary" href="slides.html#SL01">開始學習 Start Learning →</a>
+            <a class="btn" href="lab.html">進入色彩實驗室 Lab</a>
+          </div>
+        </div>
+        <p class="small">為無美術或設計背景的初學者設計：從觀察、操作到設計。所有教學內容皆追溯至已驗證 Wiki 與 10 篇登錄來源。</p>
+      </div>
+      <div class="hero-art" id="hero-art">
+        <svg viewBox="0 0 600 600" preserveAspectRatio="xMidYMid slice" aria-hidden="true" focusable="false">
+          <!-- Original geometric composition (Bauhaus primaries on a Swiss grid). -->
+          <rect width="600" height="600" fill="#FBFAF6"/>
+          <g stroke="#CFC9BB" stroke-width="1">
+            <line x1="100" y1="0" x2="100" y2="600"/><line x1="200" y1="0" x2="200" y2="600"/><line x1="300" y1="0" x2="300" y2="600"/>
+            <line x1="400" y1="0" x2="400" y2="600"/><line x1="500" y1="0" x2="500" y2="600"/>
+            <line x1="0" y1="100" x2="600" y2="100"/><line x1="0" y1="200" x2="600" y2="200"/><line x1="0" y1="300" x2="600" y2="300"/>
+            <line x1="0" y1="400" x2="600" y2="400"/><line x1="0" y1="500" x2="600" y2="500"/>
+          </g>
+          <g class="geo-spin">
+            <circle cx="300" cy="300" r="210" fill="none" stroke="#202020" stroke-width="2" stroke-dasharray="2 10"/>
+            <circle cx="300" cy="90" r="10" fill="#202020"/>
+          </g>
+          <g class="geo-pulse"><circle cx="420" cy="180" r="120" fill="#E64C37"/></g>
+          <g class="geo-drift"><rect x="110" y="250" width="220" height="220" fill="#2855AA"/></g>
+          <path d="M260 520 L400 300 L540 520 Z" fill="#F4C846" stroke="#202020" stroke-width="3"/>
+          <rect x="130" y="110" width="120" height="16" fill="#202020"/>
+          <line x1="0" y1="540" x2="600" y2="540" stroke="#202020" stroke-width="3"/>
+        </svg>
+        <button class="btn btn-sm motion-toggle" type="button" id="motion-toggle" aria-pressed="false">暫停動畫 Pause</button>
+      </div>
+    </section>
+
+    <div class="stat-row" aria-label="專案規模">
+      <div class="stat"><span class="stat-num" data-count="slides">14</span><span>頁逐頁教材 Slides</span></div>
+      <div class="stat"><span class="stat-num" data-count="modules">8</span><span>個已驗證知識模組 Modules</span></div>
+      <div class="stat"><span class="stat-num" data-count="sources">10</span><span>篇登錄來源 Sources</span></div>
+      <div class="stat"><span class="stat-num">11+1</span><span>項互動實驗 P0/P1 + P2 匯出</span></div>
+    </div>
+
+    <section class="section" aria-labelledby="mod-title">
+      <div class="wrap">
+        <div class="section-head">
+          <div class="section-no" aria-hidden="true">01</div>
+          <h2 class="section-title" id="mod-title"><span class="en">Eight Modules</span>八大知識模組</h2>
+        </div>
+        <nav class="module-grid" aria-label="八大知識模組">
+          <a class="module-card" href="wiki.html#M01"><span class="m-no">M01</span><span class="m-en">Color Fundamentals</span><span class="m-zh">色彩基礎</span><svg class="m-shape" viewBox="0 0 40 40" aria-hidden="true"><circle cx="20" cy="20" r="18" fill="#E64C37"/></svg></a>
+          <a class="module-card" href="wiki.html#M02"><span class="m-no">M02</span><span class="m-en">Color Models</span><span class="m-zh">色彩模型</span><svg class="m-shape" viewBox="0 0 40 40" aria-hidden="true"><rect x="2" y="2" width="36" height="36" fill="#2855AA"/></svg></a>
+          <a class="module-card" href="wiki.html#M03"><span class="m-no">M03</span><span class="m-en">Color Harmony</span><span class="m-zh">色彩搭配</span><svg class="m-shape" viewBox="0 0 40 40" aria-hidden="true"><path d="M20 2 L38 38 L2 38 Z" fill="#F4C846" stroke="#202020" stroke-width="2"/></svg></a>
+          <a class="module-card" href="wiki.html#M04"><span class="m-no">M04</span><span class="m-en">Color Psychology</span><span class="m-zh">色彩心理學</span><svg class="m-shape" viewBox="0 0 40 40" aria-hidden="true"><path d="M2 38 A18 18 0 0 1 38 38 Z" fill="#E64C37"/></svg></a>
+          <a class="module-card" href="wiki.html#M05"><span class="m-no">M05</span><span class="m-en">Color Perception</span><span class="m-zh">色彩感知</span><svg class="m-shape" viewBox="0 0 40 40" aria-hidden="true"><rect x="2" y="2" width="36" height="36" fill="#202020"/><rect x="13" y="13" width="14" height="14" fill="#888888"/></svg></a>
+          <a class="module-card" href="wiki.html#M06"><span class="m-no">M06</span><span class="m-en">Visual Design</span><span class="m-zh">視覺設計原則</span><svg class="m-shape" viewBox="0 0 40 40" aria-hidden="true"><rect x="2" y="2" width="24" height="36" fill="#2855AA"/><rect x="28" y="2" width="10" height="20" fill="#F4C846"/></svg></a>
+          <a class="module-card" href="wiki.html#M07"><span class="m-no">M07</span><span class="m-en">Accessibility</span><span class="m-zh">色彩與無障礙設計</span><svg class="m-shape" viewBox="0 0 40 40" aria-hidden="true"><circle cx="20" cy="20" r="18" fill="#202020"/><path d="M20 2 A18 18 0 0 1 20 38 Z" fill="#F4F1E9"/></svg></a>
+          <a class="module-card" href="wiki.html#M08"><span class="m-no">M08</span><span class="m-en">Design Application</span><span class="m-zh">實際設計應用</span><svg class="m-shape" viewBox="0 0 40 40" aria-hidden="true"><circle cx="12" cy="12" r="10" fill="#E64C37"/><rect x="20" y="20" width="18" height="18" fill="#2855AA"/></svg></a>
+        </nav>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="entry-title">
+      <div class="wrap">
+        <div class="section-head">
+          <div class="section-no" aria-hidden="true">02</div>
+          <h2 class="section-title" id="entry-title"><span class="en">Learn · Experiment · Verify</span>學習、實驗、查證</h2>
+        </div>
+        <div class="entry-grid">
+          <article class="entry">
+            <p class="label">01 Learn</p>
+            <h3>14 頁逐頁教學</h3>
+            <p>SEE COLOR → THINK COLOR → DESIGN WITH COLOR → EXPERIMENT。每頁標示 Wiki 章節與來源，可用鍵盤翻頁、全螢幕播放。</p>
+            <a class="btn btn-primary" href="slides.html">開始學習</a>
+          </article>
+          <article class="entry entry-blue">
+            <p class="label">03 Lab</p>
+            <h3>色彩實驗室</h3>
+            <p>HSL 調色、RYB／HSL 色輪比較、六種配色、WCAG 對比、RGB 混色、同時對比、60-30-10、設計對照、情緒聯想、自由配色、測驗與色票匯出。</p>
+            <a class="btn" href="lab.html">進入實驗室</a>
+          </article>
+          <article class="entry entry-yellow">
+            <p class="label">04 Workflow · 05 Sources</p>
+            <h3>流程與來源</h3>
+            <p>Graph V1／V2、真實執行紀錄、ERR-001／ERR-002，以及 S001–S010 的作者、網址、授權與限制。</p>
+            <div class="btn-row"><a class="btn" href="workflow.html">Workflow</a><a class="btn" href="references.html">Sources</a></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="about-title">
+      <div class="wrap">
+        <div class="section-head">
+          <div class="section-no" aria-hidden="true">03</div>
+          <h2 class="section-title" id="about-title"><span class="en">How this knowledge was built</span>專案知識與教學成果</h2>
+        </div>
+        <p class="lead">CHROMA 是以 LLM Wiki 驅動的色彩教育專案：來源先被取得、檢查與登錄，再整合為八個已驗證知識模組；教材只從 verified Wiki 生成，網站則由腳本把 Wiki 與教材轉成靜態資料。</p>
+        <ol class="pipeline">
+          <li><span class="p-key">raw/</span>證據層：10 篇來源的原創摘要、授權與雜湊。</li>
+          <li><span class="p-key">wiki/</span>唯一正式教學知識來源：M01–M08、詞彙表、知識缺口。</li>
+          <li><span class="p-key">content/</span>衍生教材：14 頁簡報、學習目標、互動規格、8 題測驗。</li>
+          <li><span class="p-key">docs/</span>發布成果：本網站（原生 HTML／CSS／JS，無後端）。</li>
+        </ol>
+        <p class="small muted">「verified」指摘要層語意審查與結構驗證，不代表獨立學術審查。色彩心理學內容只描述聯想研究趨勢；60-30-10 為設計經驗法則；單項對比通過不代表完整 WCAG 合規。</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p><strong>CHROMA.</strong> The Science and Art of Color · 所有圖形為原創 SVG／CSS／Canvas。</p>
+    <p><a href="references.html">來源與授權</a> · <a href="workflow.html">驗證紀錄</a></p>
+  </footer>
+
+  <script src="assets/data/chroma-data.js"></script>
+  <script src="assets/js/navigation.js"></script>
+  <script src="assets/js/home.js"></script>
+</body>
+</html>

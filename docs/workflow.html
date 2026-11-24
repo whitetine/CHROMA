@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Workflow｜工作流程與驗證紀錄 — CHROMA</title>
+  <meta name="description" content="CHROMA Graph V1／V2、Phase 1–5 執行紀錄、ERR-001／ERR-002、知識補充迴圈與測試狀態。">
+  <link rel="icon" href="assets/illustrations/mark.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/css/tokens.css">
+  <link rel="stylesheet" href="assets/css/base.css">
+</head>
+<body data-page="workflow">
+  <a class="skip-link" href="#main">跳至主要內容</a>
+  <header class="site-header">
+    <a class="brand" href="index.html" aria-label="CHROMA 首頁">
+      <svg class="brand-mark" viewBox="0 0 64 64" aria-hidden="true"><circle cx="22" cy="22" r="16" fill="#E64C37"/><rect x="30" y="30" width="28" height="28" fill="#2855AA"/><path d="M6 58 L22 34 L38 58 Z" fill="#F4C846" stroke="#202020" stroke-width="2"/></svg>
+      <span class="brand-word">CHROMA.</span>
+    </a>
+    <button class="btn btn-sm nav-toggle" type="button" data-nav-toggle aria-expanded="false" aria-controls="site-nav">選單 Menu</button>
+    <nav id="site-nav" aria-label="主要導覽">
+      <ol>
+        <li><a href="index.html" data-page="home"><span class="nav-no">00</span>Home <span class="nav-zh">首頁</span></a></li>
+        <li><a href="slides.html" data-page="learn"><span class="nav-no">01</span>Learn <span class="nav-zh">教學</span></a></li>
+        <li><a href="wiki.html" data-page="wiki"><span class="nav-no">02</span>Wiki <span class="nav-zh">知識庫</span></a></li>
+        <li><a href="lab.html" data-page="lab"><span class="nav-no">03</span>Lab <span class="nav-zh">實驗室</span></a></li>
+        <li><a href="workflow.html" data-page="workflow"><span class="nav-no">04</span>Workflow <span class="nav-zh">流程</span></a></li>
+        <li><a href="references.html" data-page="sources"><span class="nav-no">05</span>Sources <span class="nav-zh">來源</span></a></li>
+      </ol>
+    </nav>
+  </header>
+
+  <main id="main">
+    <header class="page-head">
+      <div class="wrap">
+        <p class="eyebrow">04 · Workflow &amp; Evidence</p>
+        <h1>WORKFLOW<span class="zh">工作流程與驗證紀錄</span></h1>
+        <p class="lead">本頁直接呈現 <code>workflow/</code> 與 <code>tests/</code> 的紀錄檔內容（建置時轉為靜態資料），不另行改寫結果。此為 LLM 協作＋Python 檢查＋人工審查的流程，不是自動 Graph 執行引擎。</p>
+        <nav aria-label="本頁目錄"><ul class="chips">
+          <li><a class="chip" href="#graphs">Graph V1／V2／V3</a></li>
+          <li><a class="chip" href="#loop">知識補充迴圈</a></li>
+          <li><a class="chip" href="#shift">驗證節點前移</a></li>
+          <li><a class="chip" href="#records">Phase 1–5 執行紀錄</a></li>
+          <li><a class="chip" href="#errors">ERR 錯誤紀錄</a></li>
+          <li><a class="chip" href="#tests">測試狀態</a></li>
+          <li><a class="chip" href="#decisions">決策與反思</a></li>
+        </ul></nav>
+      </div>
+    </header>
+
+    <section class="section" id="graphs" aria-labelledby="graphs-title">
+      <div class="wrap">
+        <div class="section-head"><div class="section-no" aria-hidden="true">01</div>
+          <h2 class="section-title" id="graphs-title"><span class="en">Graph V1 → V2 → V3</span>流程圖演進</h2></div>
+        <p>V1 為 Phase 1 規劃版本並保留為歷史；V2 依 ERR-001、ERR-002 的實際錯誤證據新增兩個前置閘門；V3 依 Phase 5 的 ERR-003～ERR-006 細化前端驗證段落（尚未從頭完整重跑）。圖形由本站腳本從 Mermaid 原始碼繪製為 SVG，原始碼可展開檢視。</p>
+        <div class="two-col">
+          <div id="graph-v1"></div>
+          <div id="graph-v2"></div>
+        </div>
+        <div id="graph-v3"></div>
+      </div>
+    </section>
+
+    <section class="section" id="loop" aria-labelledby="loop-title">
+      <div class="wrap">
+        <div class="section-head"><div class="section-no" aria-hidden="true">02</div>
+          <h2 class="section-title" id="loop-title"><span class="en">Knowledge Loop</span>知識補充迴圈</h2></div>
+        <div class="two-col">
+          <div>
+            <p>當教材所需證據不足時，流程回到「回查核准來源或縮小範圍」，而不是讓教材自行補寫。紀錄中實際發生的兩次：</p>
+            <ul>
+              <li><strong>M07 回查：</strong>Phase 4 依 M07 缺口回查已核准的 S009／S010，補足 sRGB 線性化公式與大型文字字級，M07 升為 v1.1.0；未新增來源 ID（見 wiki/log.md、Decisions Phase 4）。</li>
+              <li><strong>SL03 縮小範圍：</strong>光譜與生理視覺機制缺乏證據，SL03 聚焦「相同色碼可能有不同感知」，頁數維持 14 頁。</li>
+            </ul>
+            <p class="small muted">Graph V2 原文註明：Phase 4 子流程的失敗路徑以單元測試模擬驗證，並非實際教材生成失敗。</p>
+          </div>
+          <div id="graph-v2-sub"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="shift" aria-labelledby="shift-title">
+      <div class="wrap">
+        <div class="section-head"><div class="section-no" aria-hidden="true">03</div>
+          <h2 class="section-title" id="shift-title"><span class="en">Shift-left validation</span>驗證節點前移的原因</h2></div>
+        <div class="md" id="shift-table"></div>
+        <p>依 AGENTS.md「僅依實際錯誤前移檢查」：ERR-001（正文 403）使正文可讀性檢查移到來源候選階段；ERR-002（Windows CP950 解碼 UTF-8）使 UTF-8 靜態檢查移到程式生成後、單元測試前。Phase 5 新增的前端驗證同樣在瀏覽器測試前執行。</p>
+      </div>
+    </section>
+
+    <section class="section" id="records" aria-labelledby="records-title">
+      <div class="wrap">
+        <div class="section-head"><div class="section-no" aria-hidden="true">04</div>
+          <h2 class="section-title" id="records-title"><span class="en">Execution Log</span>Phase 1–5 執行紀錄</h2></div>
+        <p class="small muted">來源：workflow/execution-log.md。輸出區塊為當時實際的命令輸出。</p>
+        <div id="exec-log"></div>
+      </div>
+    </section>
+
+    <section class="section" id="errors" aria-labelledby="errors-title">
+      <div class="wrap">
+        <div class="section-head"><div class="section-no" aria-hidden="true">05</div>
+          <h2 class="section-title" id="errors-title"><span class="en">Error Records</span>錯誤紀錄</h2></div>
+        <div id="error-log"></div>
+        <div id="err-002"></div>
+      </div>
+    </section>
+
+    <section class="section" id="tests" aria-labelledby="tests-title">
+      <div class="wrap">
+        <div class="section-head"><div class="section-no" aria-hidden="true">06</div>
+          <h2 class="section-title" id="tests-title"><span class="en">Tests</span>已執行與尚未執行的測試</h2></div>
+        <p>狀態只使用 NOT_RUN／PASS／FAIL／BLOCKED／SKIPPED；只有實際執行的項目才標 PASS。</p>
+        <div class="two-col">
+          <div id="test-plan"></div>
+          <div id="browser-checklist"></div>
+        </div>
+        <div id="validation-rules"></div>
+      </div>
+    </section>
+
+    <section class="section" id="decisions" aria-labelledby="dec-title">
+      <div class="wrap">
+        <div class="section-head"><div class="section-no" aria-hidden="true">07</div>
+          <h2 class="section-title" id="dec-title"><span class="en">Decisions &amp; Reflection</span>決策與反思</h2></div>
+        <div id="decision-log"></div>
+        <div id="reviews"></div>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <p><strong>CHROMA.</strong> The Science and Art of Color · 所有圖形為原創 SVG／CSS／Canvas。</p>
+    <p><a href="references.html">來源與授權</a> · <a href="workflow.html">驗證紀錄</a></p>
+  </footer>
+
+  <script src="assets/data/chroma-data.js"></script>
+  <script src="assets/js/navigation.js"></script>
+  <script src="assets/js/workflow.js"></script>
+</body>
+</html>

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Lab｜色彩實驗室 — CHROMA</title>
+  <meta name="description" content="CHROMA 色彩實驗室：HSL、色輪、配色、WCAG 對比、RGB、同時對比、60-30-10、設計對照、情緒聯想、自由配色、測驗與色票匯出。">
+  <link rel="icon" href="assets/illustrations/mark.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/css/tokens.css">
+  <link rel="stylesheet" href="assets/css/base.css">
+  <link rel="stylesheet" href="assets/css/lab.css">
+</head>
+<body data-page="lab">
+  <a class="skip-link" href="#main">跳至主要內容</a>
+  <header class="site-header">
+    <a class="brand" href="index.html" aria-label="CHROMA 首頁">
+      <svg class="brand-mark" viewBox="0 0 64 64" aria-hidden="true"><circle cx="22" cy="22" r="16" fill="#E64C37"/><rect x="30" y="30" width="28" height="28" fill="#2855AA"/><path d="M6 58 L22 34 L38 58 Z" fill="#F4C846" stroke="#202020" stroke-width="2"/></svg>
+      <span class="brand-word">CHROMA.</span>
+    </a>
+    <button class="btn btn-sm nav-toggle" type="button" data-nav-toggle aria-expanded="false" aria-controls="site-nav">選單 Menu</button>
+    <nav id="site-nav" aria-label="主要導覽">
+      <ol>
+        <li><a href="index.html" data-page="home"><span class="nav-no">00</span>Home <span class="nav-zh">首頁</span></a></li>
+        <li><a href="slides.html" data-page="learn"><span class="nav-no">01</span>Learn <span class="nav-zh">教學</span></a></li>
+        <li><a href="wiki.html" data-page="wiki"><span class="nav-no">02</span>Wiki <span class="nav-zh">知識庫</span></a></li>
+        <li><a href="lab.html" data-page="lab"><span class="nav-no">03</span>Lab <span class="nav-zh">實驗室</span></a></li>
+        <li><a href="workflow.html" data-page="workflow"><span class="nav-no">04</span>Workflow <span class="nav-zh">流程</span></a></li>
+        <li><a href="references.html" data-page="sources"><span class="nav-no">05</span>Sources <span class="nav-zh">來源</span></a></li>
+      </ol>
+    </nav>
+  </header>
+
+  <main id="main">
+    <header class="page-head">
+      <div class="wrap">
+        <p class="eyebrow">03 · Color Laboratory</p>
+        <h1>LAB<span class="zh">色彩實驗室</span></h1>
+        <p class="lead">十一項 P0＋P1 互動與已核准的 P2 色票匯出。實驗區使用中性背景；每個工具標示知識依據、工具設定與使用限制。</p>
+      </div>
+    </header>
+    <div class="lab-layout">
+      <nav class="lab-index" aria-label="實驗目錄">
+        <h2>P0 核心</h2>
+        <ol>
+          <li><a href="#hsl"><span class="prio">01</span>HSL 三要素調色器</a></li>
+          <li><a href="#wheel"><span class="prio">02</span>RYB／HSL 色輪比較</a></li>
+          <li><a href="#harmony"><span class="prio">03</span>六種配色產生器</a></li>
+          <li><a href="#contrast-check"><span class="prio">04</span>WCAG 對比度檢查器</a></li>
+        </ol>
+        <h2>P1 延伸</h2>
+        <ol>
+          <li><a href="#rgb"><span class="prio">05</span>RGB 混色實驗</a></li>
+          <li><a href="#contrast-illusion"><span class="prio">06</span>同時對比實驗</a></li>
+          <li><a href="#ratio"><span class="prio">07</span>60-30-10 比例實驗</a></li>
+          <li><a href="#design-compare"><span class="prio">08</span>視覺設計前後對照</a></li>
+          <li><a href="#association"><span class="prio">09</span>色彩情緒聯想實驗</a></li>
+          <li><a href="#design-lab"><span class="prio">10</span>自由配色設計實驗室</a></li>
+          <li><a href="#quiz"><span class="prio">11</span>學習成果測驗</a></li>
+        </ol>
+        <h2>P2 已核准</h2>
+        <ol>
+          <li><a href="#export"><span class="prio">12</span>配色方案匯出</a></li>
+        </ol>
+        <p class="small muted">暫不實作：色覺差異模擬（缺演算法證據）、圖片色票擷取、AI 配色助手。</p>
+      </nav>
+      <div class="lab-main">
+        <section class="lab-section" id="hsl" data-feature="hsl" data-priority="P0" aria-labelledby="t-hsl">
+          <header><span class="lab-no" aria-hidden="true">01</span><h2 id="t-hsl">HSL 三要素調色器</h2>
+            <p class="lab-meta"><span class="tag">P0</span><a href="wiki.html#M01">M01 色彩基礎</a> <a class="cite" href="references.html#S003">[S003]</a> · 對應 SL04</p></header>
+          <div data-mount="hsl"></div>
+        </section>
+        <section class="lab-section" id="wheel" data-feature="wheel" data-priority="P0" aria-labelledby="t-wheel">
+          <header><span class="lab-no" aria-hidden="true">02</span><h2 id="t-wheel">RYB／HSL 色輪比較</h2>
+            <p class="lab-meta"><span class="tag">P0</span><a href="wiki.html#M03">M03 色彩搭配</a> <a class="cite" href="references.html#S001">[S001]</a> <a class="cite" href="references.html#S003">[S003]</a> · 對應 SL06</p></header>
+          <div data-mount="wheel"></div>
+        </section>
+        <section class="lab-section" id="harmony" data-feature="harmony" data-priority="P0" aria-labelledby="t-harmony">
+          <header><span class="lab-no" aria-hidden="true">03</span><h2 id="t-harmony">六種配色產生器</h2>
+            <p class="lab-meta"><span class="tag">P0</span><span class="tag tag-rule">工具設定</span><a href="wiki.html#M03">M03 色彩搭配</a> · 對應 SL07</p></header>
+          <div data-mount="harmony"></div>
+        </section>
+        <section class="lab-section" id="contrast-check" data-feature="contrast-check" data-priority="P0" aria-labelledby="t-cc">
+          <header><span class="lab-no" aria-hidden="true">04</span><h2 id="t-cc">WCAG 對比度檢查器</h2>
+            <p class="lab-meta"><span class="tag">P0</span><a href="wiki.html#M07">M07 色彩與無障礙設計</a> <a class="cite" href="references.html#S009">[S009]</a> <a class="cite" href="references.html#S010">[S010]</a> · 對應 SL12</p></header>
+          <div data-mount="contrast-check"></div>
+        </section>
+        <section class="lab-section" id="rgb" data-feature="rgb" data-priority="P1" aria-labelledby="t-rgb">
+          <header><span class="lab-no" aria-hidden="true">05</span><h2 id="t-rgb">RGB 混色實驗</h2>
+            <p class="lab-meta"><span class="tag">P1</span><a href="wiki.html#M02">M02 色彩模型</a> <a class="cite" href="references.html#S002">[S002]</a> · 對應 SL05</p></header>
+          <div data-mount="rgb"></div>
+        </section>
+        <section class="lab-section" id="contrast-illusion" data-feature="contrast-illusion" data-priority="P1" aria-labelledby="t-ci">
+          <header><span class="lab-no" aria-hidden="true">06</span><h2 id="t-ci">同時對比實驗</h2>
+            <p class="lab-meta"><span class="tag">P1</span><a href="wiki.html#M05">M05 色彩感知</a> <a class="cite" href="references.html#S006">[S006]</a> · 對應 SL03、SL09</p></header>
+          <div data-mount="contrast-illusion"></div>
+        </section>
+        <section class="lab-section" id="ratio" data-feature="ratio" data-priority="P1" aria-labelledby="t-ratio">
+          <header><span class="lab-no" aria-hidden="true">07</span><h2 id="t-ratio">60-30-10 比例實驗</h2>
+            <p class="lab-meta"><span class="tag">P1</span><span class="tag tag-rule">設計經驗法則</span><a href="wiki.html#M06">M06 視覺設計原則</a> <a class="cite" href="references.html#S001">[S001]</a> · 對應 SL10</p></header>
+          <div data-mount="ratio"></div>
+        </section>
+        <section class="lab-section" id="design-compare" data-feature="design-compare" data-priority="P1" aria-labelledby="t-dc">
+          <header><span class="lab-no" aria-hidden="true">08</span><h2 id="t-dc">視覺設計前後對照</h2>
+            <p class="lab-meta"><span class="tag">P1</span><a href="wiki.html#M06">M06 視覺設計原則</a> <a class="cite" href="references.html#S007">[S007]</a> <a class="cite" href="references.html#S008">[S008]</a> · 對應 SL02、SL11</p></header>
+          <div data-mount="design-compare"></div>
+        </section>
+        <section class="lab-section" id="association" data-feature="association" data-priority="P1" aria-labelledby="t-as">
+          <header><span class="lab-no" aria-hidden="true">09</span><h2 id="t-as">色彩情緒聯想實驗</h2>
+            <p class="lab-meta"><span class="tag">P1</span><a href="wiki.html#M04">M04 色彩心理學</a> <a class="cite" href="references.html#S004">[S004]</a> <a class="cite" href="references.html#S005">[S005]</a> · 對應 SL08</p></header>
+          <div data-mount="association"></div>
+        </section>
+        <section class="lab-section" id="design-lab" data-feature="design-lab" data-priority="P1" aria-labelledby="t-dl">
+          <header><span class="lab-no" aria-hidden="true">10</span><h2 id="t-dl">自由配色設計實驗室</h2>
+            <p class="lab-meta"><span class="tag">P1</span><span class="tag tag-rule">專案規則</span><a href="wiki.html#M08">M08 實際設計應用</a> <a class="cite" href="references.html#S009">[S009]</a> <a class="cite" href="references.html#S010">[S010]</a> · 對應 SL13</p></header>
+          <div data-mount="design-lab"></div>
+        </section>
+        <section class="lab-section" id="quiz" data-feature="quiz" data-priority="P1" aria-labelledby="t-quiz">
+          <header><span class="lab-no" aria-hidden="true">11</span><h2 id="t-quiz">學習成果測驗</h2>
+            <p class="lab-meta"><span class="tag">P1</span>M01–M08 各一題 · 對應 SL14</p></header>
+          <div data-mount="quiz"></div>
+        </section>
+        <section class="lab-section" id="export" data-feature="export" data-priority="P2" aria-labelledby="t-export">
+          <header><span class="lab-no" aria-hidden="true">12</span><h2 id="t-export">配色方案匯出</h2>
+            <p class="lab-meta"><span class="tag">P2</span>HEX 複製 · CSS Variables · JSON 下載（本機產生）</p></header>
+          <div data-mount="export"></div>
+        </section>
+      </div>
+    </div>
+  </main>
+  <footer class="site-footer">
+    <p><strong>CHROMA.</strong> The Science and Art of Color · 所有圖形為原創 SVG／CSS／Canvas。</p>
+    <p><a href="references.html">來源與授權</a> · <a href="workflow.html">驗證紀錄</a></p>
+  </footer>
+
+  <script src="assets/data/chroma-data.js"></script>
+  <script src="assets/js/navigation.js"></script>
+  <script src="assets/js/color-utils.js"></script>
+  <script src="assets/js/color-wheel.js"></script>
+  <script src="assets/js/contrast.js"></script>
+  <script src="assets/js/quiz.js"></script>
+  <script src="assets/js/lab.js"></script>
+  <script src="assets/js/lab-page.js"></script>
+</body>
+</html>

@@ -1,6 +1,6 @@
 # PROJECT_SPEC.md
 - Version: 1.0.0（Phase 0 已確認）
-- Current phase: Phase 1
+- Current phase: Phase 6（最終驗收，待人工確認；未部署）
 - Language: zh-TW
 - Deployment: GitHub Pages /docs
 
@@ -23,7 +23,7 @@
 ## 功能範圍
 P0：至少 8 篇有效來源、八模組、引用索引、14 頁簡報、HSL 調整器、數位色輪、六種配色、對比度檢查、Graph、真實紀錄、部署。
 P1：RGB 混色、同時對比、60-30-10 實驗、設計前後對照、學習測驗。
-P2 候選：色票匯出、色覺差異模擬、圖片色票擷取、AI 配色助手；具體子集待確認，AI 助手不得引入公開金鑰或後端依賴。
+P2 候選：色票匯出、色覺差異模擬、圖片色票擷取、AI 配色助手；AI 助手不得引入公開金鑰或後端依賴。Phase 5 已核准 P2 子集：色票匯出（HEX 複製、CSS Variables、JSON 下載）；其餘暫不實作（D005）。
 
 ## 頁面與教材
 Home / Learn / Wiki / Lab / Workflow / Sources。Learn 支援逐頁、鍵盤、進度、來源。14 頁依序：封面、色彩重要性、如何看見色彩、三要素、模型、色輪、六種搭配、心理、錯覺、比例、視覺層級、對比、實驗室、測驗。每知識頁含學習目標、解釋、範例、來源。
@@ -47,4 +47,4 @@ HSL：H 0–359 循環，S/L 0–100%，即時預覽及色碼。數位色輪明�
 | 7 | 公開 Pages、資源有效、六項作業交付及最終確認 |
 
 ## Graph
-詳見 workflow/graph-v1.md。每錯誤迴圈最多三次自動重試；超限人工處理。Graph V2 僅在實際錯誤證據支持後建立。
+歷史流程見 workflow/graph-v1.md、workflow/graph-v2.md；目前流程見 workflow/graph-v3.md（Phase 6，依 ERR-003～ERR-006）。每錯誤迴圈最多三次自動重試；超限人工處理。Graph V2 僅在實際錯誤證據支持後建立。

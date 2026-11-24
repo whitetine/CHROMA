@@ -1,1 +1,495 @@
-[]
+[
+  {
+    "slide_id": "SL01",
+    "title": "CHROMA — 色彩解碼",
+    "objective": "認識課程路徑與操作方式",
+    "claims": [],
+    "wiki_refs": [],
+    "source_refs": [],
+    "example": "從觀察、操作到設計。",
+    "visual": "米白底、幾何原色、英文副標 The Science and Art of Color",
+    "interaction": null,
+    "status": "reviewed"
+  },
+  {
+    "slide_id": "SL02",
+    "title": "色彩為什麼重要？",
+    "objective": "說明色彩如何參與資訊組織與情緒聯想",
+    "claims": [
+      {
+        "text": "視覺層級可以引導閱讀順序，對比協助區分資訊。",
+        "wiki_ref": "M06",
+        "section": "核心定義",
+        "source_refs": [
+          "S007"
+        ],
+        "kind": "knowledge"
+      },
+      {
+        "text": "色彩與注意及評價的關聯受情境影響。",
+        "wiki_ref": "M04",
+        "section": "核心定義",
+        "source_refs": [
+          "S004"
+        ],
+        "kind": "knowledge"
+      }
+    ],
+    "wiki_refs": [
+      "M04",
+      "M06"
+    ],
+    "source_refs": [
+      "S004",
+      "S007"
+    ],
+    "example": "同一張活動卡片使用不同強調色，觀察自己先注意哪裡；不假定所有人反應相同。",
+    "visual": "兩張相同文字的原創卡片",
+    "interaction": "design-compare",
+    "status": "reviewed"
+  },
+  {
+    "slide_id": "SL03",
+    "title": "我們如何感知色彩？",
+    "objective": "理解相同色碼可能有不同感知效果",
+    "claims": [
+      {
+        "text": "相同灰色在不同背景上可能呈現不同的明暗感受。",
+        "wiki_ref": "M05",
+        "section": "核心定義",
+        "source_refs": [
+          "S006"
+        ],
+        "kind": "knowledge"
+      },
+      {
+        "text": "相同 HSL 明度不保證相同感知亮度。",
+        "wiki_ref": "M05",
+        "section": "基礎理論",
+        "source_refs": [
+          "S003"
+        ],
+        "kind": "knowledge"
+      }
+    ],
+    "wiki_refs": [
+      "M05"
+    ],
+    "source_refs": [
+      "S003",
+      "S006"
+    ],
+    "example": "比較深淺背景上的灰色方塊；不講授尚缺證據的生理視覺機制。",
+    "visual": "雙背景示意",
+    "interaction": "contrast-illusion",
+    "status": "reviewed"
+  },
+  {
+    "slide_id": "SL04",
+    "title": "色彩三要素 HSL",
+    "objective": "分別辨識色相、飽和度、明度",
+    "claims": [
+      {
+        "text": "Hue 用角度表示；Saturation 和 Lightness 用百分比表示。",
+        "wiki_ref": "M01",
+        "section": "核心定義",
+        "source_refs": [
+          "S003"
+        ],
+        "kind": "knowledge"
+      },
+      {
+        "text": "飽和度為零時為灰階，明度兩端分別為黑與白。",
+        "wiki_ref": "M01",
+        "section": "基礎理論",
+        "source_refs": [
+          "S003"
+        ],
+        "kind": "knowledge"
+      }
+    ],
+    "wiki_refs": [
+      "M01"
+    ],
+    "source_refs": [
+      "S003"
+    ],
+    "example": "固定 H=0，依次調整 S 與 L。",
+    "visual": "色塊與三個滑桿",
+    "interaction": "hsl",
+    "status": "reviewed"
+  },
+  {
+    "slide_id": "SL05",
+    "title": "RGB 與 CMYK",
+    "objective": "區分螢幕加法與印刷減法混色",
+    "claims": [
+      {
+        "text": "RGB 使用紅綠藍光；CMYK 以印刷油墨減法混色。",
+        "wiki_ref": "M02",
+        "section": "核心定義",
+        "source_refs": [
+          "S002"
+        ],
+        "kind": "knowledge"
+      },
+      {
+        "text": "RGB 全強度合成白；CSS 可用 HEX、RGB、HSL 表色。",
+        "wiki_ref": "M02",
+        "section": "基礎理論",
+        "source_refs": [
+          "S002",
+          "S003"
+        ],
+        "kind": "knowledge"
+      },
+      {
+        "text": "印刷受設備與色彩管理影響，不能承諾精準轉換。",
+        "wiki_ref": "M02",
+        "section": "適用限制",
+        "source_refs": [
+          "S002"
+        ],
+        "kind": "knowledge"
+      }
+    ],
+    "wiki_refs": [
+      "M02"
+    ],
+    "source_refs": [
+      "S002",
+      "S003"
+    ],
+    "example": "RGB 三通道設成 255，觀察白色。",
+    "visual": "三通道混色與印刷示意",
+    "interaction": "rgb",
+    "status": "reviewed"
+  },
+  {
+    "slide_id": "SL06",
+    "title": "認識兩種色輪",
+    "objective": "辨識 RYB 與 HSL 的對向色差異",
+    "claims": [
+      {
+        "text": "傳統 RYB 教學色輪的紅與綠為對向色。",
+        "wiki_ref": "M03",
+        "section": "核心定義",
+        "source_refs": [
+          "S001"
+        ],
+        "kind": "knowledge"
+      },
+      {
+        "text": "數位 HSL 0° 為紅，180° 為青，360° 回到紅。",
+        "wiki_ref": "M03",
+        "section": "基礎理論",
+        "source_refs": [
+          "S003"
+        ],
+        "kind": "knowledge"
+      }
+    ],
+    "wiki_refs": [
+      "M03"
+    ],
+    "source_refs": [
+      "S001",
+      "S003"
+    ],
+    "example": "切換兩種色輪，比較紅色的對向位置。",
+    "visual": "並列標示 RYB 與 HSL",
+    "interaction": "wheel",
+    "status": "reviewed"
+  },
+  {
+    "slide_id": "SL07",
+    "title": "六種配色方法",
+    "objective": "運用數位 HSL 規則建立候選色票",
+    "claims": [
+      {
+        "text": "工具設定：單色固定 H 改 S/L；類似 H±30°；互補 H+180°；分裂互補 H+150°、H+210°；三色 H+120°、H+240°；Square H+90°、H+180°、H+270°。角度取模 360。",
+        "wiki_ref": "M03",
+        "section": "基礎理論",
+        "source_refs": [],
+        "kind": "project_rule"
+      },
+      {
+        "text": "色輪角度不是感知均勻距離，色相對比不保證可讀性。",
+        "wiki_ref": "M03",
+        "section": "適用限制",
+        "source_refs": [
+          "S001",
+          "S003"
+        ],
+        "kind": "knowledge"
+      }
+    ],
+    "wiki_refs": [
+      "M03"
+    ],
+    "source_refs": [
+      "S001",
+      "S003"
+    ],
+    "example": "H=350° 時類似色為 320°、350°、20°。",
+    "visual": "色輪指針與即時色票",
+    "interaction": "harmony",
+    "status": "reviewed"
+  },
+  {
+    "slide_id": "SL08",
+    "title": "色彩與心理",
+    "objective": "區分情緒聯想與實際情緒改變",
+    "claims": [
+      {
+        "text": "研究常見黃色與正向高喚起、藍綠與正向低喚起的聯想；多數研究測量聯想而非實際情緒變化。",
+        "wiki_ref": "M04",
+        "section": "基礎理論",
+        "source_refs": [
+          "S005"
+        ],
+        "kind": "knowledge"
+      },
+      {
+        "text": "文化、情境、個體及研究方法皆可能影響結果。",
+        "wiki_ref": "M04",
+        "section": "適用限制",
+        "source_refs": [
+          "S004",
+          "S005"
+        ],
+        "kind": "knowledge"
+      }
+    ],
+    "wiki_refs": [
+      "M04"
+    ],
+    "source_refs": [
+      "S004",
+      "S005"
+    ],
+    "example": "比較黃色與藍綠海報，選擇自己的聯想；不提供心理診斷。",
+    "visual": "同版面雙色票",
+    "interaction": "association",
+    "status": "reviewed"
+  },
+  {
+    "slide_id": "SL09",
+    "title": "眼睛會欺騙你嗎？",
+    "objective": "辨識同時對比與解釋限制",
+    "claims": [
+      {
+        "text": "相同灰色在暗背景旁可能顯得較亮。",
+        "wiki_ref": "M05",
+        "section": "核心定義",
+        "source_refs": [
+          "S006"
+        ],
+        "kind": "knowledge"
+      },
+      {
+        "text": "側抑制不足以解釋所有明度錯覺。",
+        "wiki_ref": "M05",
+        "section": "基礎理論",
+        "source_refs": [
+          "S006"
+        ],
+        "kind": "knowledge"
+      }
+    ],
+    "wiki_refs": [
+      "M05"
+    ],
+    "source_refs": [
+      "S006"
+    ],
+    "example": "兩個 #888888 方塊，背景分別 #222222、#EEEEEE；揭曉時統一背景。",
+    "visual": "遮罩揭曉",
+    "interaction": "contrast-illusion",
+    "status": "reviewed"
+  },
+  {
+    "slide_id": "SL10",
+    "title": "60-30-10 配色比例",
+    "objective": "將經驗法則用於原創版面練習",
+    "claims": [
+      {
+        "text": "60-30-10 是室內配色經驗法則。",
+        "wiki_ref": "M06",
+        "section": "基礎理論",
+        "source_refs": [
+          "S001"
+        ],
+        "kind": "knowledge"
+      },
+      {
+        "text": "本專案將其延伸為主色、輔助色、強調色的網頁面積示意，不是強制標準。",
+        "wiki_ref": "M06",
+        "section": "視覺範例",
+        "source_refs": [],
+        "kind": "original_example"
+      }
+    ],
+    "wiki_refs": [
+      "M06"
+    ],
+    "source_refs": [
+      "S001"
+    ],
+    "example": "調整主色與輔色面積，剩餘比例為強調色。",
+    "visual": "三段色帶與同步版面",
+    "interaction": "ratio",
+    "status": "reviewed"
+  },
+  {
+    "slide_id": "SL11",
+    "title": "視覺層級與對比",
+    "objective": "使用尺度與對比建立閱讀順序",
+    "claims": [
+      {
+        "text": "尺度、平衡、對比和知覺組織可協助資訊區分。",
+        "wiki_ref": "M06",
+        "section": "核心定義",
+        "source_refs": [
+          "S007"
+        ],
+        "kind": "knowledge"
+      },
+      {
+        "text": "一致色票與適量元素可避免焦點競爭。",
+        "wiki_ref": "M06",
+        "section": "基礎理論",
+        "source_refs": [
+          "S007",
+          "S008"
+        ],
+        "kind": "knowledge"
+      }
+    ],
+    "wiki_refs": [
+      "M06"
+    ],
+    "source_refs": [
+      "S007",
+      "S008"
+    ],
+    "example": "比較同等大小的標題與內文，以及建立明確大小層級的版本。",
+    "visual": "原創海報前後對照",
+    "interaction": "design-compare",
+    "status": "reviewed"
+  },
+  {
+    "slide_id": "SL12",
+    "title": "好看不等於好讀",
+    "objective": "使用 WCAG 文字對比門檻並理解限制",
+    "claims": [
+      {
+        "text": "一般文字 AA 4.5:1、AAA 7:1；大型文字 AA 3:1、AAA 4.5:1。",
+        "wiki_ref": "M07",
+        "section": "基礎理論",
+        "source_refs": [
+          "S009",
+          "S010"
+        ],
+        "kind": "knowledge"
+      },
+      {
+        "text": "以線性化 sRGB 相對亮度計算 (較高亮度+0.05)/(較低亮度+0.05)，不能用 HSL 明度取代。",
+        "wiki_ref": "M07",
+        "section": "基礎理論",
+        "source_refs": [
+          "S009",
+          "S010"
+        ],
+        "kind": "knowledge"
+      },
+      {
+        "text": "4.499:1 不得先四捨五入再判定 4.5:1 合格。",
+        "wiki_ref": "M07",
+        "section": "視覺範例",
+        "source_refs": [
+          "S010"
+        ],
+        "kind": "knowledge"
+      },
+      {
+        "text": "單項對比檢查不等於全面無障礙合規。",
+        "wiki_ref": "M07",
+        "section": "常見錯誤",
+        "source_refs": [
+          "S009",
+          "S010"
+        ],
+        "kind": "knowledge"
+      }
+    ],
+    "wiki_refs": [
+      "M07"
+    ],
+    "source_refs": [
+      "S009",
+      "S010"
+    ],
+    "example": "輸入黑與白，對比為 21:1；相同色碼為 1:1。",
+    "visual": "文字預覽、比率與文字狀態",
+    "interaction": "contrast-check",
+    "status": "reviewed"
+  },
+  {
+    "slide_id": "SL13",
+    "title": "色彩設計實驗室",
+    "objective": "整合色票、閱讀層級與可讀性",
+    "claims": [
+      {
+        "text": "CHROMA 練習流程：確認媒介與目標、選色、組織版面、檢查可讀性、迭代。",
+        "wiki_ref": "M08",
+        "section": "核心定義",
+        "source_refs": [],
+        "kind": "project_rule"
+      },
+      {
+        "text": "以無障礙條件檢查 UI 一般、強調與錯誤狀態。",
+        "wiki_ref": "M08",
+        "section": "基礎理論",
+        "source_refs": [
+          "S009",
+          "S010"
+        ],
+        "kind": "knowledge"
+      }
+    ],
+    "wiki_refs": [
+      "M08"
+    ],
+    "source_refs": [
+      "S009",
+      "S010"
+    ],
+    "example": "設計一張活動頁：米白背景、深藍標題、橙色強調；先驗證再採用。",
+    "visual": "原創 UI 模擬",
+    "interaction": "design-lab",
+    "status": "reviewed"
+  },
+  {
+    "slide_id": "SL14",
+    "title": "學習成果驗收",
+    "objective": "透過題庫檢查八模組學習成果",
+    "claims": [
+      {
+        "text": "回顧選色、組織、驗證與迭代的專案練習流程。",
+        "wiki_ref": "M08",
+        "section": "核心定義",
+        "source_refs": [],
+        "kind": "project_rule"
+      }
+    ],
+    "wiki_refs": [
+      "M08"
+    ],
+    "source_refs": [],
+    "example": "完成八題，依解釋與 Wiki 連結複習。",
+    "visual": "答題、分數及解析",
+    "interaction": "quiz",
+    "status": "reviewed"
+  }
+]

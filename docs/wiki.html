@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Wiki｜色彩知識庫 — CHROMA</title>
+  <meta name="description" content="CHROMA 已驗證色彩知識庫：M01–M08、中英詞彙表、前置知識關係、來源引用與知識限制。">
+  <link rel="icon" href="assets/illustrations/mark.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/css/tokens.css">
+  <link rel="stylesheet" href="assets/css/base.css">
+</head>
+<body data-page="wiki">
+  <a class="skip-link" href="#main">跳至主要內容</a>
+  <header class="site-header">
+    <a class="brand" href="index.html" aria-label="CHROMA 首頁">
+      <svg class="brand-mark" viewBox="0 0 64 64" aria-hidden="true"><circle cx="22" cy="22" r="16" fill="#E64C37"/><rect x="30" y="30" width="28" height="28" fill="#2855AA"/><path d="M6 58 L22 34 L38 58 Z" fill="#F4C846" stroke="#202020" stroke-width="2"/></svg>
+      <span class="brand-word">CHROMA.</span>
+    </a>
+    <button class="btn btn-sm nav-toggle" type="button" data-nav-toggle aria-expanded="false" aria-controls="site-nav">選單 Menu</button>
+    <nav id="site-nav" aria-label="主要導覽">
+      <ol>
+        <li><a href="index.html" data-page="home"><span class="nav-no">00</span>Home <span class="nav-zh">首頁</span></a></li>
+        <li><a href="slides.html" data-page="learn"><span class="nav-no">01</span>Learn <span class="nav-zh">教學</span></a></li>
+        <li><a href="wiki.html" data-page="wiki"><span class="nav-no">02</span>Wiki <span class="nav-zh">知識庫</span></a></li>
+        <li><a href="lab.html" data-page="lab"><span class="nav-no">03</span>Lab <span class="nav-zh">實驗室</span></a></li>
+        <li><a href="workflow.html" data-page="workflow"><span class="nav-no">04</span>Workflow <span class="nav-zh">流程</span></a></li>
+        <li><a href="references.html" data-page="sources"><span class="nav-no">05</span>Sources <span class="nav-zh">來源</span></a></li>
+      </ol>
+    </nav>
+  </header>
+
+  <main id="main">
+    <header class="page-head">
+      <div class="wrap">
+        <p class="eyebrow">02 · Knowledge Base</p>
+        <h1>WIKI<span class="zh">色彩知識庫</span></h1>
+        <p class="lead">八個 verified 知識模組是本站唯一正式教學知識來源。內容由 <code>scripts/build_site_data.py</code> 從 <code>wiki/</code> Markdown 安全轉換，事實敘述以 [Sxxx] 標示來源。</p>
+      </div>
+    </header>
+    <div class="wiki-layout">
+      <aside class="wiki-side" aria-label="知識庫導覽">
+        <div class="field search-field" role="search">
+          <label for="wiki-search">關鍵字搜尋 Search</label>
+          <input type="search" id="wiki-search" placeholder="例如：互補、WCAG、Lightness" autocomplete="off" aria-describedby="search-hint">
+          <p class="small muted" id="search-hint">搜尋模組內文與詞彙表（中英文皆可）。</p>
+        </div>
+        <div id="search-results-wrap" hidden>
+          <p class="label" id="search-count" role="status" aria-live="polite"></p>
+          <ul class="search-results" id="search-results"></ul>
+        </div>
+        <p class="label">Modules</p>
+        <ol id="module-nav"></ol>
+        <p class="label">More</p>
+        <ol>
+          <li><a href="#glossary"><span class="mono">Gl</span>中英詞彙表 Glossary</a></li>
+          <li><a href="#prereq"><span class="mono">Pr</span>前置知識關係圖</a></li>
+          <li><a href="#gaps"><span class="mono">Gp</span>知識缺口與限制</a></li>
+        </ol>
+      </aside>
+      <div class="wiki-main">
+        <article class="wiki-article" id="wiki-article" aria-live="polite"></article>
+        <section class="wiki-article" id="prereq" aria-labelledby="prereq-title">
+          <h2 id="prereq-title" class="section-title"><span class="en">Prerequisites</span>前置知識關係圖</h2>
+          <p>箭頭由前置模組指向後續模組（依各模組 metadata 的 prerequisites）。點選節點開啟模組。</p>
+          <div class="prereq-graph" id="prereq-graph"></div>
+          <details class="record"><summary>文字版關係列表</summary><div class="record-body"><ul id="prereq-list"></ul></div></details>
+        </section>
+        <section class="wiki-article" id="glossary" aria-labelledby="glossary-title">
+          <h2 id="glossary-title" class="section-title"><span class="en">Glossary</span>中英知識詞彙表</h2>
+          <div style="overflow-x:auto"><table class="glossary-table"><thead><tr><th scope="col">術語 Term</th><th scope="col">定義</th><th scope="col">Wiki</th><th scope="col">來源</th></tr></thead><tbody id="glossary-body"></tbody></table></div>
+        </section>
+        <section class="wiki-article" id="gaps" aria-labelledby="gaps-title">
+          <h2 id="gaps-title" class="section-title"><span class="en">Known limits</span>知識缺口與已知限制</h2>
+          <ul id="gap-list"></ul>
+          <p class="small muted">來源：wiki/knowledge-gaps.md。教材生成不得自行補寫缺口；需先補證據並重新驗證。</p>
+        </section>
+      </div>
+    </div>
+  </main>
+  <footer class="site-footer">
+    <p><strong>CHROMA.</strong> The Science and Art of Color · 所有圖形為原創 SVG／CSS／Canvas。</p>
+    <p><a href="references.html">來源與授權</a> · <a href="workflow.html">驗證紀錄</a></p>
+  </footer>
+
+  <script src="assets/data/chroma-data.js"></script>
+  <script src="assets/js/navigation.js"></script>
+  <script src="assets/js/wiki.js"></script>
+</body>
+</html>

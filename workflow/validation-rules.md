@@ -5,3 +5,5 @@
 成品：色彩數學、對比、互動、鍵盤、響應式、相對路徑。
 Python 檢查結構與數學；LLM 輔助語意；人工審查來源與教學品質。
 NOT_RUN/PASS/FAIL/BLOCKED/SKIPPED，僅真實執行才能標記 PASS。
+
+Phase 3：先檢查 UTF-8 及 Python AST 文字 I/O，再跑來源完整性、Wiki 引用與連結檢查，最後執行異常輸入單元測試。結構驗證不等同語意審查。

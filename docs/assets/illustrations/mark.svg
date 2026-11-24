@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="CHROMA mark">
+  <!-- Original CHROMA geometric mark: circle, square, triangle (Bauhaus primaries). -->
+  <rect width="64" height="64" fill="#F4F1E9"/>
+  <circle cx="22" cy="22" r="16" fill="#E64C37"/>
+  <rect x="30" y="30" width="28" height="28" fill="#2855AA"/>
+  <path d="M6 58 L22 34 L38 58 Z" fill="#F4C846" stroke="#202020" stroke-width="2"/>
+  <rect x="1" y="1" width="62" height="62" fill="none" stroke="#202020" stroke-width="2"/>
+</svg>

@@ -10,3 +10,14 @@ __pycache__/
 Thumbs.db
 .vscode/
 raw/private/
+
+# Phase 6 — local / temporary files
+node_modules/
+.claude/
+.idea/
+*.log
+*.tmp
+*.zip
+.pytest_cache/
+# Unredacted Windows screenshot (contains a local user path); publish WIN-001-redacted.png instead
+workflow/evidence/WIN-001.png
